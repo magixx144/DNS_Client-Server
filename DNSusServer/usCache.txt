@@ -1,0 +1,6 @@
+www.ttt.us 86400 IN CNAME www.baidu.cc
+www.ccc.us 86400 IN MX www.baidu.cc
+www.ttt.us 86400 IN MX gg.bet.us
+www.aaa.us 86400 IN A 192.168.88.15
+www.nnn.us 86400 IN A 132.168.18.77
+www.ttt.us 86400 IN A 222.222.222.222

@@ -1,0 +1,3 @@
+/home/magixx/DNSusServer/CMakeFiles/DNSusServer.dir
+/home/magixx/DNSusServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNSusServer/CMakeFiles/rebuild_cache.dir

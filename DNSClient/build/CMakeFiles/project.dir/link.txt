@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/project.dir/DNSClient.c.o CMakeFiles/project.dir/main.c.o -o project 

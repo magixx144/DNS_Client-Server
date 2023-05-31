@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/DNScnServer.dir/main.c.o CMakeFiles/DNScnServer.dir/DNScnServer.c.o -o DNScnServer 

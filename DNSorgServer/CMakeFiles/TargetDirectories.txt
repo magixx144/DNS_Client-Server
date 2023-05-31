@@ -1,0 +1,3 @@
+/home/magixx/DNSorgServer/CMakeFiles/DNSorgServer.dir
+/home/magixx/DNSorgServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNSorgServer/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/magixx/DNSLocalServer/CMakeFiles/DNSLocalServer.dir
+/home/magixx/DNSLocalServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNSLocalServer/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/magixx/DNScnServer/CMakeFiles/DNScnServer.dir
+/home/magixx/DNScnServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNScnServer/CMakeFiles/rebuild_cache.dir

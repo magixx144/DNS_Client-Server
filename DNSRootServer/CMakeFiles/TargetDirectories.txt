@@ -1,0 +1,3 @@
+/home/magixx/DNSRootServer/CMakeFiles/DNSRootServer.dir
+/home/magixx/DNSRootServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNSRootServer/CMakeFiles/rebuild_cache.dir

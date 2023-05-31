@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/magixx/DNSClient/build",
+  "command": "/usr/bin/gcc  -I/home/magixx/DNSClient/. -g -std=gnu11 -o CMakeFiles/DNSClient.dir/DNSClient.c.o -c /home/magixx/DNSClient/DNSClient.c",
+  "file": "/home/magixx/DNSClient/DNSClient.c",
+  "output": "CMakeFiles/DNSClient.dir/DNSClient.c.o"
+},
+{
+  "directory": "/home/magixx/DNSClient/build",
+  "command": "/usr/bin/gcc  -I/home/magixx/DNSClient/. -g -std=gnu11 -o CMakeFiles/DNSClient.dir/main.c.o -c /home/magixx/DNSClient/main.c",
+  "file": "/home/magixx/DNSClient/main.c",
+  "output": "CMakeFiles/DNSClient.dir/main.c.o"
+}
+]

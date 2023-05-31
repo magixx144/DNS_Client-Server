@@ -1,0 +1,3 @@
+/home/magixx/DNSClient/build/CMakeFiles/DNSClient.dir
+/home/magixx/DNSClient/build/CMakeFiles/edit_cache.dir
+/home/magixx/DNSClient/build/CMakeFiles/rebuild_cache.dir

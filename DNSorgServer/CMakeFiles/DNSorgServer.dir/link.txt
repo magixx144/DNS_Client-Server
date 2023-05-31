@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/DNSorgServer.dir/main.c.o CMakeFiles/DNSorgServer.dir/DNSorgServer.c.o -o DNSorgServer 

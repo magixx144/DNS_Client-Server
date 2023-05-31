@@ -1,0 +1,3 @@
+/home/magixx/DNScomServer/CMakeFiles/DNScomServer.dir
+/home/magixx/DNScomServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNScomServer/CMakeFiles/rebuild_cache.dir

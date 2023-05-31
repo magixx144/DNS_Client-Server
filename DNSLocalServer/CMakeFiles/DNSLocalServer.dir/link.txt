@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/DNSLocalServer.dir/main.c.o CMakeFiles/DNSLocalServer.dir/DNSLocalServer.c.o -o DNSLocalServer 

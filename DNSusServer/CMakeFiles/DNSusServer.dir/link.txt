@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/DNSusServer.dir/main.c.o CMakeFiles/DNSusServer.dir/DNSusServer.c.o -o DNSusServer 
