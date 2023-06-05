@@ -12,7 +12,7 @@
 > On May 23, 2023 at 19:19, DNSLocalServer 1.0 was finally tested and can now be queried on local DNS server.
 
 > On May 29, 2023 at 17:04, DNSLocalServer 2.0 was finally tested and can query from root server.
-> On June 5, 2023 at 17:40, DNS_System was implemented which support query type of A, CNAME, MX, PTR.
+> On June 5, 2023 at 17:40, DNS_Client_Server system was implemented which **support query type of A, CNAME, MX, PTR**.
 > Should be my last version.
 
 > I’m Magixx! You fuck with me, you fuckin’ with the best
