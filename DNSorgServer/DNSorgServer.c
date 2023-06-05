@@ -466,8 +466,9 @@ int DNS_tcp()
         char *domain = DNS_request_parse(request);
 
         // printf("%s\n",domain);
-        unsigned short type = *(unsigned short *)(request + strlen(domain) + 16); // 12为头长,+2
-        type = ntohs(type);
+        // unsigned short type = *(unsigned short *)(request + strlen(domain) + 16); // 12为头长,+2
+        // type = ntohs(type);
+        unsigned short type=0x0f;
         int answerNum = get_answerNum(path, domain, type);
         printf("%d\n",answerNum);
         unsigned short add = 0; // 记录add数目

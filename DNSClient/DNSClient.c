@@ -52,6 +52,8 @@ int DNS_query_create(struct DNS_Query *query,const char *hostname,const char *ty
         query->qtype=htons(TYPE_CNAME);
     }else if(strcmp(type,"MX")==0){
         query->qtype=htons(TYPE_MX);
+    }else if(strcmp(type,"PTR")==0){
+        query->qtype=htons(TYPE_PTR);
     }else{
         printf("No such type!!!\n");
         exit(-1);
@@ -204,6 +206,10 @@ int DNS_parse_process(char *response){
             dns_parse_name(response,ptr,&answer[i].rdata,&len_r);
             ptr+=answer[i].data_len-2;
             printf("%s has a mail exchange name of %s\n",&answer[i].name,&answer[i].rdata);
+        }else if(answer[i].type==TYPE_PTR){
+            dns_parse_name(response,ptr,&answer[i].rdata,&len_r);
+            ptr+=answer[i].data_len;
+            printf("%s has a ptr of %s\n",&answer[i].name,&answer[i].rdata);
         }
 
     }

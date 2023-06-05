@@ -153,8 +153,12 @@ int get_answerNum(char *path, char *domain, unsigned short type)
                 {
                     query_type_state = 1;
                 }
+            }else if(type==TYPE_PTR){
+                if(ascii_type=PTR_ASCII){
+                    query_type_state=1;
+                }
             }
-
+            
             if (query_name_state && query_type_state)
                 answerNum++;
         }
@@ -186,6 +190,7 @@ int DNS_table_init(struct DNS_RR *answer, char *path, char *domain, unsigned sho
         int query_type_A = 0;     // 查A返回address
         int query_type_CNAME = 0; // 查CNAME返回cname
         int query_type_MX = 0;    // 查MX返回cname
+        int query_type_PTR = 0;//查PTR
         data_list[i] = (char *)malloc(sizeof(char) * 200);
         if (fgets(data_list[i], 1000, file) == NULL)
         { // 如果错误或者读到结束符，就返回NULL；
@@ -240,6 +245,11 @@ int DNS_table_init(struct DNS_RR *answer, char *path, char *domain, unsigned sho
                 query_type_CNAME = 1;
                 query_type_state = 1;
             }
+            else if(rr->type==PTR_ASCII){
+                rr->type=TYPE_PTR;
+                query_type_PTR=1;
+                query_type_state=1;
+            }
             if (rr->type == type)
             { // type是否对应
                 // printf("Yes type.\n");
@@ -288,7 +298,7 @@ int DNS_table_init(struct DNS_RR *answer, char *path, char *domain, unsigned sho
                     memcpy(&answer[answerNum].rdata, (char *)&netip.s_addr, sizeof((char *)&netip.s_addr));
                     answerNum++;
                 }
-                else if (rr->type == TYPE_CNAME || rr->type == TYPE_MX)
+                else if (rr->type == TYPE_CNAME || rr->type == TYPE_MX||rr->type==TYPE_PTR)
                 {
                     char *ptr = rr->rdata; // ptr指向name
                     const char s[2] = ".";
@@ -768,6 +778,21 @@ void append_to_cache(char *response)
             cache = strcat(cache, class_cache);
             cache = strcat(cache, "A ");
             cache = strcat(cache, ipdup);
+            cache = strcat(cache, "\n");
+            fputs(cache, file);
+            fclose(file);
+        }else if(answer[i].type==TYPE_PTR){
+            FILE *file = fopen(path, "a+");
+            dns_parse_name(response, ptr, &answer[i].rdata, &len_r);
+            ptr += answer[i].data_len;
+            printf("%s has a ptr of %s\n", &answer[i].name, &answer[i].rdata);
+            char *namedup = strdup(&answer[i].name);
+            char *datadup = strdup(&answer[i].rdata);
+            char *cache = strcat(namedup, split);
+            cache = strcat(cache, ttl_cache);
+            cache = strcat(cache, class_cache);
+            cache = strcat(cache, "PTR ");
+            cache = strcat(cache, datadup);
             cache = strcat(cache, "\n");
             fputs(cache, file);
             fclose(file);

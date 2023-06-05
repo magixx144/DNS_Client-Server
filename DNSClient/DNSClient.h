@@ -22,6 +22,7 @@
 #define TYPE_CNAME 0x05
 #define TYPE_A 0x01
 #define TYPE_MX 0x0F
+#define TYPE_PTR 0x0C
 #define MESSAGE_LEN 1024
 #define DNS_SERVER_PORT 53
 #define DNS_SERVER_IP "127.0.0.2"

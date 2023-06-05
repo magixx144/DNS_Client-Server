@@ -1,0 +1,3 @@
+/home/magixx/DNSPTRServer/CMakeFiles/DNSPTRServer.dir
+/home/magixx/DNSPTRServer/CMakeFiles/edit_cache.dir
+/home/magixx/DNSPTRServer/CMakeFiles/rebuild_cache.dir

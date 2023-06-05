@@ -24,6 +24,7 @@
 #define TYPE_CNAME 0x05
 #define TYPE_A 0x01
 #define TYPE_MX 0x0f
+#define TYPE_PTR 0x0c
 #define CLASS_IN 0x01
 #define MESSAGE_LEN 1024
 #define DNS_SERVER_PORT 53
@@ -34,6 +35,7 @@
 #define DNS_CN_ADDRESS "127.0.0.5"
 #define DNS_ORG_ADDRESS "127.0.0.6"
 #define DNS_US_ADDRESS "127.0.0.7"
+#define DNS_PTR_ADDRESS "127.0.0.8"
 #define NAME_LEN 1024
 #define IP_LEN 20
 #define NET_IP_LEN 4
@@ -42,6 +44,7 @@
 #define A_ASCII 0x41
 #define MX_ASCII 0x584D
 #define CNAME_ASCII 0x4E43
+#define PTR_ASCII 0x5450
 
 
 

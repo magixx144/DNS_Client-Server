@@ -1,6 +1,9 @@
 www.baidu.cn 86400 IN CNAME www.baidu.cc
+www.amkk.cn 86400 IN CNAME wae.asd.mm
+www.amkk.cn 86400 IN CNAME 138.2.2.2
 www.baidu.cn 86400 IN MX www.baidu.cc
 www.baidu.cn 86400 IN MX gg.bet.com
 www.baidu.cn 86400 IN A 192.168.88.15
 www.csdn.cn 86400 IN A 132.168.18.77
 www.google.cn 86400 IN A 222.222.222.222
+www.amkk.cn 86400 IN A 111.11.1.1

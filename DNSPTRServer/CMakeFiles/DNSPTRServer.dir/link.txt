@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/DNSPTRServer.dir/main.c.o CMakeFiles/DNSPTRServer.dir/DNSPTRServer.c.o -o DNSPTRServer 

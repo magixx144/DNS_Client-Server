@@ -334,7 +334,7 @@ int DNS_tcp()
         char *domain=DNS_request_parse(request);
         char *top_level=DNS_parse_top_level(domain);
         unsigned short type = ntohs(*(unsigned short *)(request + strlen(domain) + 16));//16=header+length
-
+        
         struct DNS_RR *answer = calloc(1,sizeof(struct DNS_RR));
         DNS_table_init(answer,path,top_level);
         struct DNS_Header header={0};

@@ -1,0 +1,5 @@
+3.3.3.3.in-addr.arpa 86400 IN PTR wyx.edu.cn
+2.2.2.2.in-addr.arpa 86400 IN PTR wyx.edu.com
+1.1.1.1.in-addr.arpa 86400 IN PTR wykk.asd.us
+6.6.6.6.in-addr.arpa 86400 IN PTR asd.hhf.org
+4.4.4.4.in-addr.arpa 86400 IN PTR www.baidu.com
